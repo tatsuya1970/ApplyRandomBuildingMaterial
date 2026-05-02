@@ -2,6 +2,8 @@
 
 # ApplyRandomBuildingMaterial
 
+※このスクリプトと README は、ChatGPT を活用して作成・整理しました。
+
 PLATEAU SDK for Unity で作成・インポートした FBX ファイルの建物モデルに対して、建物側面用のテクスチャを一括で適用するための Unity Editor 拡張スクリプトです。
 
 PLATEAU の LOD1 建物モデルは、Unity に取り込んだ直後だと建物の見た目が単調になりやすいため、このスクリプトでは `bldg` で始まる建物オブジェクト／FBXを対象に、指定フォルダ内の画像をランダムに割り当て、街並みに簡易的な変化を付けます。
