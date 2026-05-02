@@ -1,0 +1,2 @@
+# ApplyRandomBuildingMaterial
+PLATEAU SDKで作成したFBXファイルのテクスチャを一括ランダム変換
