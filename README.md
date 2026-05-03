@@ -15,6 +15,22 @@ PLATEAU の LOD1 建物モデルは、Unity に取り込んだ直後だと建物
 
 このスクリプトは、PLATEAU SDK for Unity で作成・インポートした FBX 建物モデルに対して、建物側面用テクスチャを一括適用する Unity Editor 上の処理ツールです。
 
+## 動作確認 Unityバージョン
+
+Unity 6000.2.6f2
+
+※Unity 6000.4.3f1 では失敗
+
+
+### イメージ図
+
+実行前
+<img width="1099" height="559" src="https://github.com/user-attachments/assets/b087abe9-c468-4ad7-b8d7-a3a6a5063fa0" />
+
+実行後
+<img width="1103" height="560" src="https://github.com/user-attachments/assets/002462a8-1ee2-43b8-8330-9f4e4931dbc2" />
+
+
 対象となる建物オブジェクトの Material に対して、以下の処理を行います。
 
 - Shader を `PlateauTriplanerShader/PlateauTriplanarShader(DualTextures)` に変更
@@ -44,25 +60,6 @@ bldg_53394557
 bldg_53394558
 ````
 
-## ファイル配置
-
-スクリプトは以下の場所に配置してください。
-
-```text
-Assets/Editor/ApplyRandomBuildingMaterial.cs
-```
-
-建物用テクスチャは以下のフォルダに配置してください。
-
-```text
-Assets/BldgTexture
-```
-
-生成された Material は以下のフォルダに保存されます。
-
-```text
-Assets/GeneratedBuildingMaterials
-```
 
 ## 事前準備
 
@@ -100,6 +97,14 @@ Assets/BldgTexture
 ```
 
 Unity上で `Texture2D` として認識される画像であれば使用できます。
+
+（参考）
+PLATEAU SDK　デフォルトのテクスチャは以下のフォルダにあります。
+
+```text
+Assets\PLATEAU-SDK-for-Unity\Materials\Fallback\MaterialTexture\TexDefaultBuilding
+```
+
 
 ### 4. 対象タグを作成
 
@@ -251,6 +256,10 @@ Side-MainTexture用テクスチャ数: 12
 処理時間: 80.25 秒
 完了: タグ 'bldg' の対象オブジェクト 1250 個 / Material処理済み 1250 個 / スキップ 0 個 / 新規作成 1250 個 / 再利用 0 個
 ```
+
+## 処理時間
+
+マテリアル1546個（広島県呉市中心街1tin）で102秒
 
 ## よくあるエラー
 
