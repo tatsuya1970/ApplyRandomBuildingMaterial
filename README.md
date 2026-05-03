@@ -18,17 +18,17 @@ PLATEAU の LOD1 建物モデルは、Unity に取り込んだ直後だと建物
 ## 動作確認 Unityバージョン
 
 Unity 6000.2.6f2
-
-※Unity 6000.4.3f1 では失敗
+Unity 6000.4.3f1 
 
 
 ### イメージ図
 
 実行前
-<img width="1099" height="559" src="https://github.com/user-attachments/assets/b087abe9-c468-4ad7-b8d7-a3a6a5063fa0" />
+<img width="841" height="386" src="https://github.com/user-attachments/assets/f76c07b6-8996-450c-a5d4-e58f33735f02" />
 
 実行後
-<img width="1103" height="560" src="https://github.com/user-attachments/assets/002462a8-1ee2-43b8-8330-9f4e4931dbc2" />
+<img width="841" height="386" src="https://github.com/user-attachments/assets/6a6ee31b-4145-43a3-b9b1-4870593ec8ad" />
+
 
 
 対象となる建物オブジェクトの Material に対して、以下の処理を行います。
@@ -52,13 +52,7 @@ Unity 6000.2.6f2
 2. オブジェクト名、または元FBXファイル名が `bldg` から始まる
 3. `Renderer` コンポーネントを持っている
 
-例：
-
-```text
-bldg_53394556
-bldg_53394557
-bldg_53394558
-````
+※サイズはX,Y,Z ともに100倍にしてください（重要）
 
 
 ## 事前準備
